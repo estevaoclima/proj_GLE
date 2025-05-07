@@ -259,15 +259,15 @@ def bin2mat(chosenRecord, folderPath, recordingSite):
     
     # save on matlab format
 #    savemat(
-            outputPath+f'{chosenRecord}_data4matlab.mat',
-            record_dict
-            )
+#            outputPath+f'{chosenRecord}_data4matlab.mat',
+#            record_dict
+#            )
     # save on python format (numpy format for numerical arrays)
     #    np.savez(
-                outputPath+f'{chosenRecord}_data4matlab.npz',
-                # files below
-                record_dict
-                )
+#                outputPath+f'{chosenRecord}_data4matlab.npz',
+#                # files below
+#                record_dict
+##                )
     
     
     print(chosenRecord)
@@ -275,7 +275,7 @@ def bin2mat(chosenRecord, folderPath, recordingSite):
     print(f'length of spk_time: {len(spk_time)}')
     print(f'length of waveformData: {len(spk_wfm)}')
     print(f'total number of trials: {tot_num_trls}')
-    print(f'total number of conditions: {max(np.array(metaData_stm_perTrial)[1:])}')
+    #print(f'total number of conditions: {max(np.array(metaData_stm_perTrial)[1:])}')
 
 """
     # SAVE
